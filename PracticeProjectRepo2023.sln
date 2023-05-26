@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebAppli
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "PPData", "PPData\PPData.sqlproj", "{08872795-DC12-4622-AC51-FBDC8107ED64}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeProjectWPFUI", "PracticeProjectWPFUI\PracticeProjectWPFUI.csproj", "{744F0C47-047A-4403-ACB4-B9368AA4E2A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{08872795-DC12-4622-AC51-FBDC8107ED64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08872795-DC12-4622-AC51-FBDC8107ED64}.Release|Any CPU.Build.0 = Release|Any CPU
 		{08872795-DC12-4622-AC51-FBDC8107ED64}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{744F0C47-047A-4403-ACB4-B9368AA4E2A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{744F0C47-047A-4403-ACB4-B9368AA4E2A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{744F0C47-047A-4403-ACB4-B9368AA4E2A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{744F0C47-047A-4403-ACB4-B9368AA4E2A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
