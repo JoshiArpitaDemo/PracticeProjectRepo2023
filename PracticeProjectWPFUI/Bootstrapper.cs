@@ -1,4 +1,6 @@
 ﻿using Caliburn.Micro;
+using PracticeProjectDesktopUI.Library.Api;
+using PracticeProjectDesktopUI.Library.Models;
 using PracticeProjectWPFUI.Helpers;
 using PracticeProjectWPFUI.ViewModels;
 using System;
@@ -32,6 +34,7 @@ namespace PracticeProjectWPFUI
             _container
                 .Singleton<IWindowManager, WindowManager>()
                 .Singleton<IEventAggregator, EventAggregator>()
+                .Singleton<ILoggedInUserModel, LoggedInUserModel>()
                 .Singleton<IAPIHelper, APIHelper>();
 
             GetType().Assembly.GetTypes()
