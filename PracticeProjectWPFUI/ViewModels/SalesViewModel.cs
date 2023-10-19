@@ -48,11 +48,28 @@ namespace PracticeProjectWPFUI.ViewModels
         public ProductDisplayModel SelectedProduct
         {
             get { return _selectedProduct; }
-            set { _selectedProduct = value;
-            NotifyOfPropertyChange(()=> SelectedProduct); }
+            set
+            {
+                _selectedProduct = value;
+                NotifyOfPropertyChange(() => SelectedProduct);
+                NotifyOfPropertyChange(() => CanAddToCart);
+            }
         }
 
-		public BindingList<ProductDisplayModel> Products
+        private CartItemDisplayModel _selectedCartItem;
+
+        public CartItemDisplayModel SelectedCartItem
+        {
+            get { return _selectedCartItem; }
+            set
+            {
+                _selectedCartItem = value;
+                NotifyOfPropertyChange(() => SelectedCartItem);
+                NotifyOfPropertyChange(() => CanRemoveFromCart);
+            }
+        }
+
+        public BindingList<ProductDisplayModel> Products
         {
 			get { return _products; }
 			set 
@@ -193,12 +210,27 @@ namespace PracticeProjectWPFUI.ViewModels
             {
                 bool output = false;
                 //make sure something is selected
+
+                if (SelectedCartItem!=null && SelectedCartItem?.Product.QuantityInStock > 0)
+                {
+                    output = true;
+                }
                 return output;
             }
         }
 
         public void RemoveFromCart()
         {
+            SelectedCartItem.Product.QuantityInStock += 1;
+
+            if (SelectedCartItem.QuantityInCart > 1)
+            {
+                SelectedCartItem.QuantityInCart -= 1;
+            }
+            else
+            {
+                Cart.Remove(SelectedCartItem);
+            }
             NotifyOfPropertyChange(() => SubTotal);
             NotifyOfPropertyChange(() => Tax);
             NotifyOfPropertyChange(() => Total);
