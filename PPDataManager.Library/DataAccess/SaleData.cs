@@ -61,7 +61,7 @@ namespace PPDataManager.Library.DataAccess
             {
                 try
                 {
-                    sql.StartTransaction("TRMData");
+                    sql.StartTransaction("PPData");
 
                     // Save the sale model
                     sql.SaveDataInTransaction("dbo.spSale_Insert", sale);
