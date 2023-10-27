@@ -10,7 +10,7 @@ using System.Web.Http;
 namespace WebApplication1.Controllers
 {
     [Authorize]
-    [RoutePrefix("api/User")]
+    //[RoutePrefix("api/User")]
     public class UserController : ApiController
     {
         [HttpGet]
@@ -18,6 +18,7 @@ namespace WebApplication1.Controllers
         {
             string userId = RequestContext.Principal.Identity.GetUserId();
             UserData data = new UserData();
+
             return data.GetUserById(userId).First();
         }
     }

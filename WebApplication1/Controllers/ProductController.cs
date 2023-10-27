@@ -8,13 +8,13 @@ using System.Web.Http;
 
 namespace WebApplication1.Controllers
 {
-    [Authorize]
+    [Authorize(Roles ="Cashier")]
     public class ProductController : ApiController
     {
-        // GET: Product
         public List<ProductModel> Get()
         {
             ProductData data = new ProductData();
+
             return data.GetProducts();
                 
         }
