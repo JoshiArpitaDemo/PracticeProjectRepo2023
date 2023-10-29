@@ -9,15 +9,17 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "PPData", "PPData\PPData.sql
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeProjectWPFUI", "PracticeProjectWPFUI\PracticeProjectWPFUI.csproj", "{744F0C47-047A-4403-ACB4-B9368AA4E2A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PPDataManager.Library", "PPDataManager.Library\PPDataManager.Library.csproj", "{369798B6-65E3-40C4-956F-C1E7F3E0456D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PPDataManager.Library", "PPDataManager.Library\PPDataManager.Library.csproj", "{369798B6-65E3-40C4-956F-C1E7F3E0456D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeProjectDesktopUI.Library", "PracticeProjectDesktopUI.Library\PracticeProjectDesktopUI.Library.csproj", "{5F6FEF74-8E84-4FEB-8448-A876DCDB428B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PracticeProjectDesktopUI.Library", "PracticeProjectDesktopUI.Library\PracticeProjectDesktopUI.Library.csproj", "{5F6FEF74-8E84-4FEB-8448-A876DCDB428B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{514FE9AF-A6ED-4DD9-BBE2-9FEDC237A457}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{609824A1-D5E1-4DEA-A214-04EDFAB9854D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WPF", "WPF", "{BB70868F-CD4F-4447-9385-F2F111C9B133}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PPApi", "PPApi\PPApi.csproj", "{44B4AB40-6431-4028-B05C-BC4BC3B94CB0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{5F6FEF74-8E84-4FEB-8448-A876DCDB428B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F6FEF74-8E84-4FEB-8448-A876DCDB428B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F6FEF74-8E84-4FEB-8448-A876DCDB428B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44B4AB40-6431-4028-B05C-BC4BC3B94CB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44B4AB40-6431-4028-B05C-BC4BC3B94CB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44B4AB40-6431-4028-B05C-BC4BC3B94CB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44B4AB40-6431-4028-B05C-BC4BC3B94CB0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +63,7 @@ Global
 		{744F0C47-047A-4403-ACB4-B9368AA4E2A8} = {BB70868F-CD4F-4447-9385-F2F111C9B133}
 		{369798B6-65E3-40C4-956F-C1E7F3E0456D} = {609824A1-D5E1-4DEA-A214-04EDFAB9854D}
 		{5F6FEF74-8E84-4FEB-8448-A876DCDB428B} = {BB70868F-CD4F-4447-9385-F2F111C9B133}
+		{44B4AB40-6431-4028-B05C-BC4BC3B94CB0} = {609824A1-D5E1-4DEA-A214-04EDFAB9854D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0998F4EC-1686-4195-A7C6-123C19E0D718}
